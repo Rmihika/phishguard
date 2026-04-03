@@ -1,10 +1,6 @@
 # 🛡️ PhishGuard – Real-Time Phishing Detection System
 
-## 🚀 Live Demo
-👉 https://your-live-link.com  
-(If not deployed yet, remove this for now)
 
----
 
 ## 🧠 Overview
 PhishGuard is a cybersecurity-focused system designed to detect and block phishing attacks in real time. It integrates a Chrome extension with a Python-powered backend and a React dashboard to proactively protect users from malicious websites.
@@ -80,5 +76,5 @@ User → Chrome Extension → Python Backend → Threat Analysis
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/YOUR-USERNAME/phishguard.git
+git clone https://github.com/Rmihika/phishguard.git
 cd phishguard
