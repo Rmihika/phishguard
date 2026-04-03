@@ -1,0 +1,1 @@
+{"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'icon' column of 'simulations' in the schema cache"}

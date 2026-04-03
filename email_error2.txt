@@ -1,0 +1,1 @@
+API access from non-browser environments is currently disabled.Enable this option in https://dashboard.emailjs.com/admin/account/security

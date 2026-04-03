@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PhishGuard | Threat Blocked</title>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #06080d;
+      color: #e0e7ef;
+      font-family: 'Sora', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background-image: radial-gradient(circle at 50% 0%, rgba(255, 71, 87, 0.1) 0%, transparent 60%);
+    }
+
+    .glass-panel {
+      background: rgba(12, 16, 24, 0.8);
+      border: 1px solid rgba(255, 71, 87, 0.3);
+      border-radius: 20px;
+      padding: 40px 50px;
+      max-width: 550px;
+      text-align: center;
+      backdrop-filter: blur(24px);
+      box-shadow: 0 0 60px rgba(255, 71, 87, 0.1);
+      animation: fadeUp 0.5s ease-out forwards;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .icon-container {
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 71, 87, 0.1);
+      border: 2px solid #ff4757;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 36px;
+      box-shadow: 0 0 30px rgba(255, 71, 87, 0.4);
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: #ff4757;
+      letter-spacing: -0.5px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 24px;
+    }
+
+    .url-box {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 16px;
+      font-family: 'Azeret Mono', monospace;
+      font-size: 13px;
+      color: #ffb347;
+      word-break: break-all;
+      margin-bottom: 32px;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: #00e5a0;
+      color: #06080d;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 4px 20px rgba(0, 229, 160, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0, 229, 160, 0.4);
+    }
+
+    .btn-danger {
+      background: transparent;
+      color: rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-danger:hover {
+      color: #ff4757;
+      border-color: rgba(255, 71, 87, 0.3);
+      background: rgba(255, 71, 87, 0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glass-panel">
+    <div class="icon-container">&#128737;</div>
+    <h1 id="warning-title">Phishing Threat Blocked</h1>
+    <p id="warning-desc">PhishGuard intercepted your navigation. This website exhibits strong characteristics of a deceptive site designed to steal your credentials or personal information.</p>
+
+    <div class="url-box" id="url-display">Malicious URL Fetched...</div>
+
+    <div class="button-group">
+      <button class="btn-primary" id="back-btn">Back to Safety</button>
+      <button class="btn-danger" id="proceed-btn">Ignore & Proceed</button>
+    </div>
+  </div>
+
+  <script src="warning.js"></script>
+
+</body>
+</html>
